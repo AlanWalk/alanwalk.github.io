@@ -64,19 +64,19 @@ menu:
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
+  - links
   - category
   - tag
-  - recent_posts
-  - recent_comments
-  # - links
+  # - recent_posts
+  # - recent_comments
 
 links:
-  - title: site-name1
-    url: http://www.example1.com/
-  - title: site-name2
-    url: http://www.example2.com/
-  - title: site-name3
-    url: http://www.example3.com/
+  - title: Github
+    url: https://github.com/alanwalk
+  - title: Steam
+    url: https://steamcommunity.com/id/alanwalk
+  - title: Weibo
+    url: https://weibo.com/torb
 
 timeline:
   - num: 1
