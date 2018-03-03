@@ -1,18 +1,12 @@
 ---
-title: VPS安装小记(一) - 利用SSH私钥实现无密访问VPS
+title: 利用SSH私钥实现无密访问VPS
 date: 2017-02-19
 tag:
-  - VPS
-  - VPS安装小记
-category: VPS
+  - ssh
+  - linux
+category: linux
 ---
 
-## 前言
-最近把VPS重新安装了一次，依次对安装过程做了下记录，整理成该系列博文，以方便自己日后查阅。这是博文的第一篇，整个系列可以点击此TAG查看：[VPS安装小记](https://blog.otorb.com/tags/VPS安装小记/)。
-
-客户端环境：Windows 10
-服务器环境：Linode 1024 & LNMP 1.4
-SSH客户端程序：Git Bash
 
 ## 生成 `rsa key`
 执行`ssh-keygen`生成公私钥，过程大致如下：
