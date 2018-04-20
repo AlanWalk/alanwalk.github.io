@@ -11,7 +11,7 @@ category: C++
 
 效果预览
 -----------
-![preview](preview.png)
+![preview](how-to-add-ue4-editor-menu/preview.png)
 
 LuaSnippetsGenerator.h
 ------------------------

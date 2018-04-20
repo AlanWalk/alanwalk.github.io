@@ -30,5 +30,8 @@ if (Function)
 ```cpp
 UStructProperty* KeyProp = FindField<UStructProperty>(Object->GetClass(), TEXT("ShapedTextOptions")); // ShapedTextOptions为Struct的名字，需要去掉F
 FShapedTextOptions* KeyPropData = KeyProp->ContainerPtrToValuePtr<FShapedTextOptions>(Object);
-KeyPropData->bOverride_TextShapingMethod = 1;
+if (KeyPropData)
+{
+	KeyPropData->bOverride_TextShapingMethod = 1;
+}
 ```
