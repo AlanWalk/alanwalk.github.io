@@ -3,6 +3,7 @@ title: Win10彻底移除OneDrive
 date: 2017-11-06
 tag:
   - Win10
+  - OneDrive
 category: Windows
 ---
 
