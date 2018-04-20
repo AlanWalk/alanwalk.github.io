@@ -32,7 +32,7 @@ MacGesture2-Publish
 └── rules.jpg
 MacGesture2-Publish.md
 ```
-在日志中，使用 `![logo](logo.jpg)` 进行引用。
+在日志中，使用 `![logo](MacGesture2-Publish/logo.jpg)` 进行引用。
 
 相关资料：
 - [在 hexo 中无痛使用本地图片](http://www.tuicool.com/articles/umEBVfI)
