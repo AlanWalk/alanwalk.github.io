@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>HTML学习笔记 | Alan's Blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">HTML学习笔记</h1><a id="logo" href="/.">Alan's Blog</a><p class="description">Simple life, simple man.</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">HTML学习笔记</h1><div class="post-meta">Apr 26, 2018<span> | </span><span class="category"><a href="/categories/HTML/">HTML</a></span></div><div class="post-content"><ul>
+<li><p><code>&lt;em&gt;</code>表示强调，形式为斜体</p>
+</li>
+<li><p><code>&lt;strong&gt;</code>表示更加强调，形式为粗体</p>
+</li>
+<li><p><code>&lt;span&gt;</code>没有特殊语义，一般用于给单独文本加形式用</p>
+</li>
+<li><p><code>&lt;q&gt;</code> 引用标记，会自动加双引号</p>
+</li>
+<li><p><code>&lt;blockquote&gt;</code> 大段引用标记，浏览器会解析成缩进样式</p>
+</li>
+<li><p><code>&lt;br /&gt;</code>是换行，不要使用<code>&lt;br&gt;</code>，虽然它也是有效的</p>
+</li>
+<li><p><code>&lt;hr /&gt;</code>是水平线</p>
+</li>
+<li><p><code>&amp;nbsp;</code>是空格，HTML是忽略空格和换行的，需要特殊的标记来显示</p>
+</li>
+<li><p><code>&lt;address&gt;</code>用来定义一个地址，默认样式为斜体</p>
+</li>
+<li><p><code>&lt;code&gt;</code>来标记一行代码</p>
+</li>
+<li><p><code>&lt;pre&gt;</code>来标记大段代码</p>
+</li>
+<li><p>无序列表<code>unordered list</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;精彩少年&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;美丽突然出现&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;触动心灵的旋律&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>有序列表<code>ordered list</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">    &lt;li&gt;精彩少年&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;美丽突然出现&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;触动心灵的旋律&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>&lt;div&gt;</code>用来划分不同的逻辑块</p>
+</li>
+<li><p><code>&lt;table&gt;</code>描述表格，其中<code>summary</code>字段显示表格摘要</p>
+<ul>
+<li><code>&lt;caption&gt;</code>表格标题</li>
+<li><code>&lt;tbody&gt;</code>用于划分块</li>
+<li><code>&lt;tr&gt;</code>标记一行数据</li>
+<li><code>&lt;th&gt;</code>用于描述顶部标题单元格</li>
+<li><code>&lt;td&gt;</code>用于描述表格普通内容单元格</li>
+</ul>
+</li>
+<li><p><code>&lt;a&gt;</code>超链接，<code>href</code>字段填写地址，<code>title</code>字段填写鼠标悬浮提示，<code>target</code>字段填为<code>_blank</code>时，将在新窗口打开链接</p>
+<ul>
+<li>发送邮件<code>&lt;a href=&quot;mailto:收件人1;收件人2?cc=抄送人&amp;bcc=密件抄送人&amp;subject=邮件主题&amp;body=邮件内容&quot;&gt;</code></li>
+</ul>
+</li>
+<li><p><code>&lt;img&gt;</code>图片标签</p>
+<ul>
+<li><code>src</code>标识图像的位置；</li>
+<li><code>alt</code>指定图像的描述性文本，当图像不可见时（下载不成功时），可看到该属性指定的文本；</li>
+<li><code>title</code>提供在图像可见时对图像的描述(鼠标滑过图片时显示的文本)；</li>
+</ul>
+</li>
+<li><p><code>&lt;form&gt;</code>表单标签</p>
+<ul>
+<li><code>method</code>数据传送方式(post/get)</li>
+<li><code>action</code>数据传送到的地方，如一个php页面(save.php)</li>
+</ul>
+</li>
+<li><p><code>&lt;label&gt;</code>文本标签</p>
+<ul>
+<li><code>for</code> 填写对应的<code>input</code>的<code>id</code>进行绑定</li>
+</ul>
+</li>
+<li><p><code>&lt;textarea&gt;</code>多段文本输入框</p>
+<ul>
+<li><code>cols</code> 列数</li>
+<li><code>rows</code> 行数</li>
+</ul>
+</li>
+<li><p><code>&lt;input&gt;</code>输入标签</p>
+<ul>
+<li><code>type</code><ul>
+<li><code>text</code> 普通文本框</li>
+<li><code>password</code> 密码文本框</li>
+<li><code>submit</code> 提交按钮</li>
+<li><code>reset</code> 重置按钮</li>
+<li><code>radio</code> 单选框</li>
+<li><code>checkbox</code> 复选框</li>
+</ul>
+</li>
+<li><code>name</code>文本框名字</li>
+<li><code>value</code>文本框默认值</li>
+<li><code>id</code> 同一组的控件name要相同，但不同的控件id不同</li>
+</ul>
+</li>
+<li><p><code>&lt;select&gt;</code>下拉列表标签，配合<code>&lt;section&gt;</code>选项标签使用</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;select multiple=&quot;multiple&quot;&gt;</span><br><span class="line">    &lt;option value=&quot;看书&quot;&gt;看书&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;旅游&quot;&gt;旅游&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;运动&quot; selected=&quot;selected&quot;&gt;运动&lt;/option&gt;</span><br><span class="line">    &lt;option value=&quot;购物&quot;&gt;购物&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p><code>&lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code>外链式css</p>
+</li>
+<li><p>css选择器没有前缀是标签选择器，<code>.</code>是类<code>(class)</code>选择器，<code>#</code>是ID选择器</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.setGreen</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:green;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#stress</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>类选择器可以同时使用多个，id选择器不可以</p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--正确--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>到了<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"stress bigsize"</span>&gt;</span>三年级<span class="tag">&lt;/<span class="name">span</span>&gt;</span>下学期时，我们班上了一节公开课...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--错误--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>到了<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"stressid bigsizeid"</span>&gt;</span>三年级<span class="tag">&lt;/<span class="name">span</span>&gt;</span>下学期时，我们班上了一节公开课...<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>子选择器<code>&gt;</code>，类选择器下的扩展，如：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span>&gt;<span class="selector-tag">span</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid red;&#125;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"first"</span>&gt;</span>三年级时，<span class="tag">&lt;<span class="name">span</span>&gt;</span>我还是一个<span class="tag">&lt;<span class="name">span</span>&gt;</span>胆小如鼠<span class="tag">&lt;/<span class="name">span</span>&gt;</span>的小女孩<span class="tag">&lt;/<span class="name">span</span>&gt;</span>，上课从来不敢回答老师提出的问题，生怕回答错了老师会批评我。就一直没有这个勇气来回答老师提出的问题。学校举办的活动我也没勇气参加。<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>包含选择器<code></code>，和子选择器不同的是会递归影响</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span> <span class="selector-tag">span</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid red;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>通用选择器<code>*</code>，影响所有html里的标签元素  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">* &#123;<span class="attribute">color</span>:red;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p><code>,</code> 可以用来间隔多个相同样式的选择器</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.first</span>,<span class="selector-id">#second</span> <span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:green;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>同时有多个css样式，按权值生效</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:red;&#125; <span class="comment">/*权值为1*/</span></span><br><span class="line"><span class="selector-tag">p</span> <span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:green;&#125; <span class="comment">/*权值为1+1=2*/</span></span><br><span class="line"><span class="selector-class">.warning</span>&#123;<span class="attribute">color</span>:white;&#125; <span class="comment">/*权值为10*/</span></span><br><span class="line"><span class="selector-tag">p</span> <span class="selector-tag">span</span><span class="selector-class">.warning</span>&#123;<span class="attribute">color</span>:purple;&#125; <span class="comment">/*权值为1+1+10=12*/</span></span><br><span class="line"><span class="selector-id">#footer</span> <span class="selector-class">.note</span> <span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:yellow;&#125; <span class="comment">/*权值为100+10+1=111*/</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li><p>强制提升权值<code>!important</code>，不用再分号间隔</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;<span class="attribute">color</span>:red<span class="meta">!important</span>;&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.first</span>&#123;<span class="attribute">color</span>:green;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文字排版</p>
+<ul>
+<li>设置字体 <code>body{font-family:&quot;Microsoft Yahei&quot;;}</code></li>
+<li>设置字号、颜色 <code>body{font-size:12px;color:#666}</code></li>
+<li>设置粗体 <code>a{font-weight:bold;}</code>, 取消粗体a{font-weight:normal;}</li>
+<li>设置斜体 <code>p{font-style:italic;}</code></li>
+<li>设置下划线 <code>p{text-decoration:underline;}</code></li>
+<li>设置删除线 <code>.oldPrice{text-decoration:line-through;}</code></li>
+<li>设置段首缩进 <code>p{text-indent:2em;}</code></li>
+<li>设置行间距 <code>p{line-height:2em;}</code></li>
+<li>设置字母间距 <code>h1{letter-spacing:20px;}</code></li>
+<li>设置单词间距 <code>h1{word-spacing:50px;}</code></li>
+<li>设置对齐方式 <code>div{text-align:center;}</code></li>
+</ul>
+</li>
+<li><p>常用的块状元素有：<br>  <code>&lt;div&gt;、&lt;p&gt;、&lt;h1&gt;...&lt;h6&gt;、&lt;ol&gt;、&lt;ul&gt;、&lt;dl&gt;、&lt;table&gt;、&lt;address&gt;、&lt;blockquote&gt; 、&lt;form&gt;</code></p>
+</li>
+<li><p>常用的内联元素有：<br>  <code>&lt;a&gt;、&lt;span&gt;、&lt;br&gt;、&lt;i&gt;、&lt;em&gt;、&lt;strong&gt;、&lt;label&gt;、&lt;q&gt;、&lt;var&gt;、&lt;cite&gt;、&lt;code&gt;</code></p>
+</li>
+<li><p>常用的内联块状元素有：<br>  <code>&lt;img&gt;、&lt;input&gt;</code></p>
+</li>
+<li><p>可以加入 <code>a{display:block}</code> 让元素显示为块状元素，特点：</p>
+<ul>
+<li>每个块级元素都从新的一行开始，并且其后的元素也另起一行。（真霸道，一个块级元素独占一行）</li>
+<li>元素的高度、宽度、行高以及顶和底边距都可设置</li>
+<li>元素宽度在不设置的情况下，是它本身父容器的100%（和父元素的宽度一致），除非设定一个宽度</li>
+</ul>
+</li>
+<li><p>可以加入 <code>a{display:inline}</code> 让元素显示为内联元素，特点：</p>
+<ul>
+<li>和其他元素都在一行上</li>
+<li>元素的高度、宽度及顶部和底部边距不可设置</li>
+<li>元素的宽度就是它包含的文字或图片的宽度，不可改变</li>
+</ul>
+</li>
+<li><p>可以加入 <code>a{display:inline-block}</code> 让元素显示为内联块状元素，特点：</p>
+<ul>
+<li>和其他元素都在一行上</li>
+<li>元素的高度、宽度及顶部和底部边距可以设置</li>
+</ul>
+</li>
+</ul>
+</div><div class="tags"><a href="/tags/html/">html</a><a href="/tags/css/">css</a></div><div class="post-nav"><a class="next" href="/2018/04/17/how-to-add-ue4-editor-menu/">如何添加一个UE4编辑器菜单按钮</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://alanwalk.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="https://github.com/alanwalk" title="Github" target="_blank">Github</a><ul></ul><a href="https://steamcommunity.com/id/alanwalk" title="Steam" target="_blank">Steam</a><ul></ul><a href="https://weibo.com/torb" title="Weibo" target="_blank">Weibo</a></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/C/">C++</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Linux/">Linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Other/">Other</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/VPS/">VPS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/VSCode/">VSCode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/html/" style="font-size: 15px;">html</a> <a href="/tags/C/" style="font-size: 15px;">C++</a> <a href="/tags/VSCode/" style="font-size: 15px;">VSCode</a> <a href="/tags/UE4/" style="font-size: 15px;">UE4</a> <a href="/tags/Licenses/" style="font-size: 15px;">Licenses</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Cast/" style="font-size: 15px;">Cast</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/ssh/" style="font-size: 15px;">ssh</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/Win10/" style="font-size: 15px;">Win10</a> <a href="/tags/OneDrive/" style="font-size: 15px;">OneDrive</a> <a href="/tags/Linux/" style="font-size: 15px;">Linux</a></div></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2018 <a href="/." rel="nofollow">Alan's Blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
