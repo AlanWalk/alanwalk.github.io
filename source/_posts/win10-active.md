@@ -9,6 +9,6 @@ category: Windows
 ```
 slmgr.vbs /upk
 slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
-slmgr /skms zh.us.to
+slmgr /skms kms.cdn.mn
 slmgr /ato
 ```
